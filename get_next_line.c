@@ -6,7 +6,7 @@
 /*   By: novan-ve <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/27 14:15:45 by novan-ve       #+#    #+#                */
-/*   Updated: 2019/12/13 11:54:15 by novan-ve      ########   odam.nl         */
+/*   Updated: 2021/03/18 14:18:35 by novan-ve      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		ft_cpy(char **line, char **str, int fd)
 	}
 	*line = ft_strdup(str[fd]);
 	if (!*line)
-		return (-1);
+		return (0);
 	free(str[fd]);
 	str[fd] = 0;
 	return (0);
